@@ -1,0 +1,18 @@
+CACHE MANIFEST
+testmanifest.html
+./images/logo1.png
+./images/logo2.png
+node_modules/mdi/css/materialdesignicons.min.css
+node_modules/perfect-scrollbar/dist/css/perfect-scrollbar.min.css
+node_modules/jquery-bar-rating/dist/themes/css-stars.css
+node_modules/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css
+node_modules/font-awesome/css/font-awesome.min.css
+css/style.css
+images/favicon.png
+node_modules/jquery/dist/jquery.min.js
+node_modules/popper.js/dist/umd/popper.min.js
+node_modules/bootstrap/dist/js/bootstrap.min.js
+node_modules/perfect-scrollbar/dist/js/perfect-scrollbar.jquery.min.js
+js/misc.js
+js/dashboard.js
+ckeditor/ckeditor.js

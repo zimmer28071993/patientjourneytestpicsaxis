@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Patient Journey </title>
+  <!-- plugins:css -->
+  <link rel="stylesheet" href="node_modules/mdi/css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="node_modules/perfect-scrollbar/dist/css/perfect-scrollbar.min.css">
+  <!-- endinject -->
+  <!-- plugin css for this page -->
+  <link rel="stylesheet" href="node_modules/jquery-bar-rating/dist/themes/css-stars.css">
+  <link rel="stylesheet" href="node_modules/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css" />
+  <!-- End plugin css for this page -->
+  <!-- inject:css -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- endinject -->
+  <link rel="shortcut icon" href="images/favicon.png" />
+</head>
+<body>
+  <div class="container-scroller">
+    <!-- partial:partials/_navbar.html -->
+    <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+      <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
+        <a class="navbar-brand brand-logo" href="index.html"><img src="images/logo1.png" alt="logo"   /></a>
+        <a class="navbar-brand brand-logo-mini" href="index.html"><img src="images/logo2.png" alt="logo"/></a>
+      </div>
+      <div class="navbar-menu-wrapper d-flex align-items-stretch">
+        <ul class="navbar-nav navbar-nav-right">
+       
+          <li class="nav-item ">
+            <a class="nav-link  nav-profile" id="profileDropdown" href="#" data-toggle="dropdown" aria-expanded="false">
+           <!--    <img src="images/faces/face1.jpg" alt="image"> -->
+              <span class="d-none d-lg-inline">Ruchir Gupta</span>
+            </a>
+            <div class="dropdown-menu navbar-dropdown w-100" aria-labelledby="profileDropdown">
+              <a class="dropdown-item" href="#">
+               <!--  <i class="mdi mdi-cached mr-2 text-success"></i> -->
+                Activity Log
+              </a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">
+                <i class="mdi mdi-logout mr-2 text-primary"></i>
+                Signout
+              </a>
+            </div>
+          </li>
+          <li class="nav-item nav-logout d-none d-lg-block">
+            <a class="nav-link" href="#">
+              <i class="mdi mdi-power"></i>
+            </a>
+          </li>
+        </ul>
+        <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
+        <span class="mdi mdi-menu"></span>
+      </button>
+      </div>
+    </nav>
+    <!-- partial -->
+    <div class="container-fluid page-body-wrapper" style="background-color: white">
+      <div class="row row-offcanvas row-offcanvas-right">
+        <!-- partial:partials/_sidebar.html -->
+        <nav class="sidebar sidebar-offcanvas" id="sidebar">
+         <ul class="nav">
+             <li class="nav-item">
+              <a class="nav-link" href="patients.html">
+                <span class="menu-title">My Patients</span>
+              </a>
+            </li>
+             <!-- <li class="nav-item">
+              <a class="nav-link" href="doctors.html">
+                <span class="menu-title">Virtual Doctors</span>
+              </a>
+            </li> -->
+            <li class="nav-item">
+              <a class="nav-link" href="appointments.html">
+                <span class="menu-title">My Appointments</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="inbox.html">
+                <span class="menu-title">My Inbox</span>
+              </a>
+            </li>
+          </ul>
+         
+        </nav>
+        <!-- partial -->
+        <div class="content-wrapper" style="background-color: #72d7db">
+       
+          <div class="row">
+           <div class="col-lg-12 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title" style="display: inline-block;">Patient details</h4>
+                  
+                    <div class="table-responsive">
+<table class="table table-striped">
+                    <thead>
+                      <tr>
+                        <th>Patient Id</th>
+                        <th>Patient Name</th>
+                        <th>Age</th>
+                        <th>Email</th>
+                        <th>Contact</th>
+                         <th>Address</th>
+                         <th>Treatment Type</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                     <tr>
+                        <td class="py-1">1</td>
+                        <td>Amit Shaw</td>
+                         <td>32</td>
+                        <td>Amit@zimmerBiomet.com</td>
+                        <td>984657574</td>
+                        <td>Hno. 12 sec 12 rohini</td>
+                        <td>Knee</td>
+                      </tr>
+                    </tbody>
+                  </table> 
+                  </div>
+  </div>
+</div>
+                </div>
+                 <div class="col-lg-12 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title" style="display: inline-block;">Patient History</h4>
+                  <div class="table-responsive">
+<table class="table table-striped">
+                    <thead>
+                      <tr>
+                        <th>Date</th>
+                        <th>Prescription</th>
+                        <th>X-Ray</th>
+                        <th>Report </th>
+                        <th>Remark</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                      <td >18-05-2018</td>
+                      <td><a href="images/prescription.gif"  target="_blank">View </a></td>
+                        <td><a href="images/knee-xray.jpeg"  target="_blank">View </a></td>
+                         <td><a href="images/doctor-report.jpg" target="_blank">View </a></td>
+                        <td>Daily 15 Min Exercise</td>
+                      </tr>
+                      <tr>
+                      <td >20-05-2018</td>
+                      <td><a href="images/prescription.gif"  target="_blank">View </a></td>
+                        <td><a href="images/knee-xray.jpeg"  target="_blank">View </a></td>
+                         <td><a href="images/doctor-report.jpg" target="_blank">View </a></td>
+                        <td>Eat more protein </td>
+                      </tr>
+                    </tbody>
+                  </table> 
+                </div>
+  </div>
+</div>
+                
+                </div>
+              </div>
+            </div>            
+          </div>
+        </div>
+        </div>
+        <!-- content-wrapper ends -->
+        <!-- partial:partials/_footer.html -->
+         <footer class="footer">
+          <div class="d-sm-flex justify-content-center justify-content-sm-between">
+            <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">Copyright © 2018 <a href="http://www.picsaxis.com/" target="_blank">Picsaxis Technologies</a>. All rights reserved.</span>
+            <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">Patient Journey <i class="mdi mdi-heart text-danger"></i></span>
+          </div>
+        </footer>
+        <!-- partial -->
+      </div>
+      <!-- row-offcanvas ends -->
+    </div>
+    <!-- page-body-wrapper ends -->
+  </div>
+  <!-- container-scroller -->
+
+  <!-- plugins:js -->
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="node_modules/perfect-scrollbar/dist/js/perfect-scrollbar.jquery.min.js"></script>
+  <!-- endinject -->
+  <!-- Plugin js for this page-->
+  <script src="node_modules/chart.js/dist/Chart.min.js"></script>
+  <!-- End plugin js for this page-->
+  <!-- inject:js -->
+  <script src="js/off-canvas.js"></script>
+  <script src="js/misc.js"></script>
+  <!-- endinject -->
+  <!-- Custom js for this page-->
+  <script src="js/dashboard.js"></script>
+  <!-- End custom js for this page-->
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBZYBgPX-KNuYR0i_0WzDWnnb0mZHNiIlc=myMap"></script>
+  <script type="text/javascript">
+    
+
+uploadModal=function(){
+  $("#uploadModal").modal("show");
+}
+
+consultativediv=function(){
+  $("#consultativediv").modal("show");
+
+}
+$("#diagnosisCenter").click(function(){
+  var mapProp= {
+    center:new google.maps.LatLng(28.444441614869703,77.02788841186725),
+    zoom:5,
+};
+var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+$("#diagnosisCenterdiv").modal("show");  
+});
+
+
+
+function bs_input_file() {
+  $(".input-file").before(
+    function() {
+      if ( ! $(this).prev().hasClass('input-ghost') ) {
+        var element = $("<input type='file' class='input-ghost' style='visibility:hidden; height:0'>");
+        element.attr("name",$(this).attr("name"));
+        element.change(function(){
+          element.next(element).find('input').val((element.val()).split('\\').pop());
+        });
+        $(this).find("button.btn-choose").click(function(){
+          element.click();
+        });
+        $(this).find("button.btn-reset").click(function(){
+          element.val(null);
+          $(this).parents(".input-file").find('input').val('');
+        });
+        $(this).find('input').css("cursor","pointer");
+        $(this).find('input').mousedown(function() {
+          $(this).parents('.input-file').prev().click();
+          return false;
+        });
+        return element;
+      }
+    }
+  );
+}
+$(function() {
+  bs_input_file();
+});
+patientsummery=function(){
+  $("#patientsummerydiv").modal("show");
+}
+ </script>
+<!-- Modal -->
+<div class="modal fade" id="uploadModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Upload Reports</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        
+<ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+  <li class="nav-item">
+    <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#cusultation" role="tab" aria-controls="pills-home" aria-selected="true">Cunsultation</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#x-rays" role="tab" aria-controls="pills-profile" aria-selected="false">X-Rays</a>
+  </li>
+  
+</ul>
+<div class="tab-content" id="pills-tabContent">
+  <div class="tab-pane fade show active" id="cusultation" role="tabpanel" aria-labelledby="pills-home-tab">
+  
+ <form method="POST" action="#" enctype="multipart/form-data">
+  <!-- COMPONENT START -->
+  <div class="form-group">
+    <div class="input-group input-file" name="Fichier1">
+        <input type="text" class="form-control" placeholder='Choose a file...' />     
+            <span class="input-group-btn">
+            <button class="btn btn-default btn-choose" type="button">Choose</button>
+        </span>
+    </div>
+  </div>  
+</form>
+</div>
+  <div class="tab-pane fade" id="x-rays" role="tabpanel" aria-labelledby="pills-profile-tab">
+
+<form class="form-horizontal" action="/action_page.php">
+  
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="pwd">Upload xray:</label>
+    <div class="col-sm-10"> 
+       
+      
+    <div class="input-group input-file" name="Fichier1"  >
+        <input type="text" class="form-control" placeholder='Choose a file...' />     
+            <span class="input-group-btn">
+            <button class="btn btn-default btn-choose" type="button">Choose</button>
+        </span>
+  </div>
+    </div>
+  </div>
+</form>
+</div>
+  
+</div>
+
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary">Save changes</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="diagnosisCenterdiv" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Diagnosis Center</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">        
+      <div id="googleMap" style="width: auto; height: 300px;"></div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="consultativediv" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Consultative Phase </h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">        
+      
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+
+</html>

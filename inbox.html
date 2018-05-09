@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Patient Journey </title>
+  <!-- plugins:css -->
+  <link rel="stylesheet" href="node_modules/mdi/css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="node_modules/perfect-scrollbar/dist/css/perfect-scrollbar.min.css">
+  <!-- endinject -->
+  <!-- plugin css for this page -->
+  <link rel="stylesheet" href="node_modules/jquery-bar-rating/dist/themes/css-stars.css">
+  <link rel="stylesheet" href="node_modules/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css" />
+  <!-- End plugin css for this page -->
+  <!-- inject:css -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- endinject -->
+  <link rel="shortcut icon" href="images/favicon.png" />
+</head>
+<body>
+  <div class="container-scroller">
+    <!-- partial:partials/_navbar.html -->
+    <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+      <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
+        <a class="navbar-brand brand-logo" href="index.html"><img src="images/logo1.png" alt="logo"   /></a>
+        <a class="navbar-brand brand-logo-mini" href="index.html"><img src="images/logo2.png" alt="logo"/></a>
+      </div>
+      <div class="navbar-menu-wrapper d-flex align-items-stretch">
+        <ul class="navbar-nav navbar-nav-right">
+       
+          <li class="nav-item ">
+            <a class="nav-link  nav-profile" id="profileDropdown" href="#" data-toggle="dropdown" aria-expanded="false">
+           <!--    <img src="images/faces/face1.jpg" alt="image"> -->
+              <span class="d-none d-lg-inline">Ruchir Gupta</span>
+            </a>
+            <div class="dropdown-menu navbar-dropdown w-100" aria-labelledby="profileDropdown">
+              <a class="dropdown-item" href="#">
+               <!--  <i class="mdi mdi-cached mr-2 text-success"></i> -->
+                Activity Log
+              </a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">
+                <i class="mdi mdi-logout mr-2 text-primary"></i>
+                Signout
+              </a>
+            </div>
+          </li>
+          <li class="nav-item nav-logout d-none d-lg-block">
+            <a class="nav-link" href="#">
+              <i class="mdi mdi-power"></i>
+            </a>
+          </li>
+        </ul>
+        <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
+        <span class="mdi mdi-menu"></span>
+      </button>
+      </div>
+    </nav>
+    <!-- partial -->
+    <div class="container-fluid page-body-wrapper" style="background-color: white">
+      <div class="row row-offcanvas row-offcanvas-right">
+        <!-- partial:partials/_sidebar.html -->
+        <nav class="sidebar sidebar-offcanvas" id="sidebar">
+         <ul class="nav">
+             <li class="nav-item">
+              <a class="nav-link" href="patients.html">
+                <span class="menu-title">My Patients</span>
+              </a>
+            </li>
+             <!-- <li class="nav-item">
+              <a class="nav-link" href="doctors.html">
+                <span class="menu-title">Virtual Doctors</span>
+              </a>
+            </li> -->
+            <li class="nav-item">
+              <a class="nav-link" href="appointments.html">
+                <span class="menu-title">My Appointments</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="inbox.html">
+                <span class="menu-title">My Inbox</span>
+              </a>
+            </li>
+          </ul>
+         
+        </nav>
+        <!-- partial -->
+        <div class="content-wrapper" style="background-color: #72d7db">
+       
+          <div class="row">
+           <div class="col-lg-12 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">Messages/Queries</h4>
+                  <div class="table-responsive">
+                  <table class="table  table-striped ">
+                    <thead>
+                      <tr>
+                        <th>Patient Name</th>
+                        <th>Phase</th>
+                        <th>Date</th>
+                        <th>Time</th>
+                        <th>Action</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="py-1">Abhay</td>
+                        <td>DECISION MAKING PHASE</td>
+                        <td>21-04-2018</td>
+                        <td>22:10</td>
+                        <td>
+                          <button type="button"  onclick="queries()" class="btn btn-info">view</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="py-1">Sanjay</td>
+                        <td>PRE-SURGERY PHASE</td>
+                        
+                        <td>30-05-2018</td>
+                        <td>2:10</td>
+                        <td>
+                          <button type="button" onclick="queries()" class="btn btn-info">view</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="py-1">Parasnath</td>
+                        <td>RECOVERY PHASE</td>
+                        
+                        <td>30-05-2018</td>
+                        <td>2:10</td>
+                        <td>
+                          <button type="button" onclick="queries()" class="btn btn-info">view</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="py-1">Suresh</td>
+                        <td>POST-SURGERY PHASE</td>
+                        
+                        <td>30-05-2018</td>
+                        <td>2:10</td>
+                        <td>
+                          <button type="button" onclick="queries()" class="btn btn-info">view</button>
+                        </td>
+                      </tr>
+                      
+                    </tbody>
+                  </table>
+                  </div>
+                </div>
+              </div>
+            </div>            
+          </div>
+          </div>
+        </div>
+        <!-- content-wrapper ends -->
+        <!-- partial:partials/_footer.html -->
+        <footer class="footer">
+          <div class="d-sm-flex justify-content-center justify-content-sm-between">
+            <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">Copyright © 2018 <a href="http://www.picsaxis.com/" target="_blank">Picsaxis Technologies</a>. All rights reserved.</span>
+            <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">Patient Journey <i class="mdi mdi-heart text-danger"></i></span>
+          </div>
+        </footer>
+        <!-- partial -->
+      </div>
+      <!-- row-offcanvas ends -->
+    </div>
+    <!-- page-body-wrapper ends -->
+  </div>
+  <!-- container-scroller -->
+
+  <!-- plugins:js -->
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="node_modules/perfect-scrollbar/dist/js/perfect-scrollbar.jquery.min.js"></script>
+  <!-- endinject -->
+  <!-- Plugin js for this page-->
+  <script src="node_modules/chart.js/dist/Chart.min.js"></script>
+  <!-- End plugin js for this page-->
+  <!-- inject:js -->
+  <script src="js/off-canvas.js"></script>
+  <script src="js/misc.js"></script>
+  <!-- endinject -->
+  <!-- Custom js for this page-->
+  <script src="js/dashboard.js"></script>
+  <!-- End custom js for this page-->
+  <script type="text/javascript">
+
+
+
+
+queries= function(){
+$("#queriesdiv").modal("show");  
+};
+  </script>
+
+ <div class="modal fade" id="queriesdiv" role="dialog">
+    <div class="modal-dialog  modal-md">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" ><i class="fa fa-times" style="color: red;"></i> </button>
+        </div>
+        <div class="modal-body">
+          <div class="col-12 stretch-card">
+                  <div class="card">
+                    <div class="card-body">
+                      
+                      <form class="forms-sample" >                       
+                        <div class="row">
+                          <label for="exampleInputPassword2" class="col-sm-12 col-form-label">Abhay posted :23 May 2018
+                            <br>
+                           <b> I am suffering from knee pain?</b>
+                           <div id="reply"></div>
+                           <a href="#" id="replybtn" onclick="replyQuery()">reply</a>
+                          </label>
+                          <div class="col-sm-10">
+                            
+                          </div>
+                        </div>
+                        <div align="center">
+                        <button type="button" id ="submitbtn" onclick="addContenttoreply();" class="btn btn-success ">Submit</button>
+                        <button type="reset" class="btn btn-danger " data-dismiss="modal">Close</button>
+                      </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript">
+    $(function() {
+    $("#submitbtn").hide();
+});
+    replyQuery = function(){
+      $("#replybtn").hide();
+      $("#reply").append("<textarea class='form-control' id ='replytextarea' rows='4' placehoder='Reply '></textarea>" );
+      $("#submitbtn").show();
+
+
+    }
+    addContenttoreply = function(){
+      $("#submitbtn").hide();
+      var replyContent= $("#replytextarea").val();
+
+      var date = new Date();
+       hours = date.getHours(),
+      minutes = date.getMinutes();
+
+  if (minutes < 10) {
+   minutes = "0" + minutes;
+      }
+      var completedateandtime=hours+":"+minutes+","+date.getDate()+"/"+(date.getMonth()+1)+"/"+date.getFullYear();
+      if(replyContent!=null && replyContent.trim()!=""){
+      $("#reply").append("<br><label id ='replylabel' >"+replyContent+" by : (logged in user) "+ completedateandtime+"</label><br>" )  
+      };
+      $("#replybtn").show();
+      $("#replytextarea").remove();
+    }
+  </script>
+</body>
+</html>
